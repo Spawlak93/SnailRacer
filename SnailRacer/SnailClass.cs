@@ -11,7 +11,7 @@ namespace SnailRacer
     {
         private readonly int _MaxSpeedChange = 4;
         private readonly int _MaxSpeed = 10;
-        private readonly int _MinSpeed = 1;
+        private readonly int _MinSpeed = 3;
         private Random _rand;
         public SnailClass(string name, Random random)
         {

@@ -14,7 +14,7 @@ namespace SnailRacer
             Random _rand = new Random();
             int _RaceLength = 1000;
             int _NumbaerOfRacers = 6;
-            List<string> _SnailNames = new List<string> { "Sir. Es Car Vango", "Speedy Shelldon", "Slowdo Baggins", "Ronald Speedsly", "The Phantom Mollsk", "Jennifer Slowpez", "Albus Dumblesnore", "Gastro-pod-Racer" };
+            List<string> _SnailNames = new List<string> { "Sir. Es Car Vanslow", "Speedy Shelldon", "Slowdo Baggins", "Ronald Speedsly", "The Phantom Mollsk", "Jennifer Slowpez", "Albus Dumblesnore", "Gastro-pod-Racer" };
 
             Console.Write("Enter the name of your snail:");
             SnailClass PlayerSnail = new SnailClass(Console.ReadLine(), _rand);
@@ -70,8 +70,9 @@ namespace SnailRacer
 
         public static void DrawPodium(List<SnailClass> snails)
         {
-            Console.WriteLine($"\n\n\n\n\n\n\n" +
-                string.Format($"{ 0, - 41 }",  snails[0].Name )); 
+            Console.WriteLine($"Finishing in First place we have {snails[0].Name}\n" +
+                $"In Second We have {snails[1].Name}\n" +
+                $"And taking the bronze we have {snails[2].Name}.");
         }
     }
 }
