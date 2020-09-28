@@ -74,9 +74,7 @@ namespace SnailRacer
             double halfway = raceLength * .5;
             double finalQuarter = raceLength * .25;
                 
-            if (Speed == 0git remote add origin https://github.com/Spawlak93/SnailRacer.git
-            git branch -M master
-            git push - u origin master)
+            if (Speed == 0)
             {
                 Console.WriteLine($"{Name} decided to take a nap instead");
                 await Task.Delay(3000);
