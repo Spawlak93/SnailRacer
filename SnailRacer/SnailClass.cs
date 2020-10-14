@@ -1,8 +1,4 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading;
 using System.Threading.Tasks;
 
 namespace SnailRacer
@@ -102,7 +98,7 @@ namespace SnailRacer
                 //2 % chance of speedchange
                 if (_rand.Next(50) == 1)
                     SpeedChange(_rand.Next(10));
-                await Task.Delay(300);
+                await Task.Delay(_rand.Next(100,300));
             }
             return this;
         }
